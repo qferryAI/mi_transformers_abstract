@@ -521,6 +521,7 @@ class TrainTransformer:
         """
             
         # make dataloader from dataset
+        self.dataset.set_type = 'train'
         dataloader = DataLoader(dataset=self.dataset, batch_size=self.batch_size, shuffle=False)
 
         # print details about training

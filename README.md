@@ -2,9 +2,13 @@
 (mi_transformers_abstract)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ---
-This repository hosts the official implementation for generating datasets and training factorized transformer models, as described in the paper _"Emergence and Function of Abstract Representations in Self-Supervised Transformers"_ by Quentin RV. Ferry, Joshua Ching, and Takashi Kawai. While the main focus of the paper is on the analysis of transformer activations, this repository aims to provide a solid foundation for researchers and enthusiasts to replicate the study's environment and preliminary steps.
+This repository hosts the official implementation for generating datasets and training factorized transformer models, as described in the [paper](https://arxiv.org/abs/2312.05361) _"Emergence and Function of Abstract Representations in Self-Supervised Transformers"_ by Quentin RV. Ferry, Joshua Ching, and Takashi Kawai. While the main focus of the paper is on the analysis of transformer activations, this repository aims to provide a solid foundation for researchers and enthusiasts to replicate the study's environment and preliminary steps.
 
 <img src="img/visual_abstract.png" width="800">
+
+In addition to studying the inner workings of the classic transformer architecture, we also introduced a novel _language-enhanced architecture_ (LEA), which was designed to encourage the vanilla transformer to "talk" about the abstractions it learns through training (see [original paper](https://arxiv.org/abs/2312.05361) and figure below for details). LEA is trained on the same datasets as the factorized transformer models, and the code for training the LEA model is also included in this repository.
+
+<img src="img/lea.png" width="400">
 
 ## Overview
 
@@ -18,9 +22,14 @@ The mechanistic interpretability paper sheds light on the inner workings of self
 ## Scripts
 - `utils.py`: Implements helper functions.
 - `module_dataset.py`: Implements dataset class.
+Related to the training of the factorized transformer models:
 - `module_transformer_factor.py`: Implements transformer with factorized token embeddings and position encodings.
 - `module_train_probe.py`: Implements wrapper class for training and probing the transformer.
 - `train_model.py`: Script used to train the model.
+Related to the training of the language-enhanced architecture (LEA) models:
+- `module_transformer_lea.py`: Implements transformer with language-enhanced architecture.
+- `module_train_probe_lea.py`: Implements wrapper class for training LEA models.
+- `train_model_lea.py`: Script used to train the LEA model.
 
 ## Getting Started
 
