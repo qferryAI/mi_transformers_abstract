@@ -23,14 +23,14 @@ The mechanistic interpretability paper sheds light on the inner workings of self
 - `utils.py`: Implements helper functions.
 - `module_dataset.py`: Implements dataset class.
 <br>
-<br>
 Related to the training of the factorized transformer models:
+
 - `module_transformer_factor.py`: Implements transformer with factorized token embeddings and position encodings.
 - `module_train_probe.py`: Implements wrapper class for training and probing the transformer.
 - `train_model.py`: Script used to train the model.
 <br>
-<br>
 Related to the training of the language-enhanced architecture (LEA) models:
+
 - `module_transformer_lea.py`: Implements transformer with language-enhanced architecture.
 - `module_train_probe_lea.py`: Implements wrapper class for training LEA models.
 - `train_model_lea.py`: Script used to train the LEA model.
