@@ -95,7 +95,7 @@ If you find our paper and code useful in your research, please consider citing o
 ```
 
 # TO DOs
-- [ ] Add language-enhanced architecture and training script.
+- [x] Add language-enhanced architecture and training script.
 
 # License
 
