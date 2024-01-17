@@ -4,7 +4,7 @@
 ---
 This repository hosts the official implementation for generating datasets and training factorized transformer models, as described in the paper _"Emergence and Function of Abstract Representations in Self-Supervised Transformers"_ by Quentin RV. Ferry, Joshua Ching, and Takashi Kawai. While the main focus of the paper is on the analysis of transformer activations, this repository aims to provide a solid foundation for researchers and enthusiasts to replicate the study's environment and preliminary steps.
 
-<img src="img/visual_abstract.png" width="400" height="300">
+<img src="img/visual_abstract.png" width="800">
 
 ## Overview
 
@@ -46,7 +46,7 @@ conda env create -f environment.yml
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/<your-username>/<repository-name>.git
+   git clone https://github.com/qferryAI/mi_transformers_abstract.git
    ```
 2. Create Python environment & install the required packages:
    ```bash
